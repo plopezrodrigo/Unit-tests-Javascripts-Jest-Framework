@@ -17,7 +17,7 @@ test("One dollar should be 154.24 yens", function(){
     const { fromDollarToYen } = require('./app.js')
     
     // hago mi comparacion (la prueba)
-    expect(fromDollarToYen(3.5)).toBe(447.65); //1 dolar son 154,24 yenes, entonces 3.5 dolares deberian ser = (3.5 * 154,24)
+    expect(fromDollarToYen(3.5)).toBe(371.1857379767828); //1 dolar son 154,24 yenes, entonces 3.5 dolares deberian ser = (3.5 * 154,24)
 })
 
 test("One yen should be 159.87 pounds", function(){
