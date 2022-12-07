@@ -10,14 +10,14 @@ let oneEuroIs = {
 }
 
 const fromEuroToDollar = (euro) =>{
-    return euro * oneEuroIs["USD"]
+    return parseFloat (euro * oneEuroIs["USD"])
 }
 
 const fromDollarToYen = (dollar) =>{
-    return (dollar / oneEuroIs["USD"]) * oneEuroIs["JPY"]
+    return parseFloat ((dollar / oneEuroIs["USD"]) * oneEuroIs["JPY"])
 }
 
-const fromYenToPound = (euro) =>{
-    return euro * ((euro * (oneEuroIs["JPY"])) / ("GBP"))
+const fromYenToPound = (yen) =>{
+    return parseFloat (yen * ((oneEuroIs["GBP"])) / oneEuroIs["JPY"])
 }
 module.exports =  {sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};
